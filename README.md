@@ -2,4 +2,4 @@
 Dossier sponsoring Cdl 2015
 
 Compilation du document :
-$ xelatex sponsor_cdl14.tex
+$ pdflatex sponsor_cdl14.tex
