@@ -12,9 +12,12 @@
 % Packages
 
 % Polices
-\RequirePackage{microtype}
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[T1]{fontenc}
+%\RequirePackage{microtype}
+\usepackage{xltxtra}
+% ⇒ installer la font sur la machine.
+\defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle,Scale=MatchLowercase}
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
 
 \usepackage{tgadventor}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
