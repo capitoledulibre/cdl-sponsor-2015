@@ -6,7 +6,7 @@
 %\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cdl_sponsor}
 
-\LoadClass[a4paper,11pt]{article}
+\LoadClass[a4paper,12pt]{article}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Packages
@@ -15,8 +15,8 @@
 %\RequirePackage{microtype}
 \usepackage{xltxtra}
 % ⇒ installer la font sur la machine.
-\defaultfontfeatures{Ligatures=TeX,Numbers=OldStyle,Scale=MatchLowercase}
-\setmainfont{Linux Libertine O}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Linux Biolinum O}
 \setsansfont{Linux Biolinum O}
 
 \usepackage{tgadventor}
