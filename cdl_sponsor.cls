@@ -58,9 +58,11 @@
 \usepackage{array,multirow,makecell}
 \usepackage{colortbl}
 
-% Guillemets
+% Macro
 
 \newcommand{\g}[1]{\og #1 \fg{}}
+
+\newcommand{\HRule}[1]{\hfill \rule{0.2\linewidth}{#1}}
 
 
 
@@ -219,4 +221,21 @@
     \centering
     \includegraphics[width=0.4\textwidth]{#1}
   \end{wrapfigure}
+}
+
+\renewcommand{\citation}[2]{
+\vspace{5mm}
+\hspace{15mm}{\fontsize{72}{72}\selectfont \textcolor{Cdl}{“}}\vspace{-18mm}
+\begin{flushright}
+	\begin{minipage}{0.8\textwidth}
+		\begin{flushleft}
+			\large \textit{\og #1 \fg{}} \\
+		\end{flushleft}
+		\begin{flushright}\vspace{-5mm}
+			{\normalsize #2}
+		\end{flushright}
+	\end{minipage}
+\end{flushright}
+\begin{flushright}
+\end{flushright}\vspace{-5mm}
 }
