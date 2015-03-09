@@ -6,15 +6,18 @@
 %\NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{cdl_sponsor}
 
-\LoadClass[a4paper,11pt]{article}
+\LoadClass[a4paper,12pt]{article}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Packages
 
 % Polices
-\RequirePackage{microtype}
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[T1]{fontenc}
+%\RequirePackage{microtype}
+\usepackage{xltxtra}
+% ⇒ installer la font sur la machine.
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Linux Biolinum O}
+\setsansfont{Linux Biolinum O}
 
 \usepackage{tgadventor}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
@@ -55,9 +58,11 @@
 \usepackage{array,multirow,makecell}
 \usepackage{colortbl}
 
-% Guillemets
+% Macro
 
 \newcommand{\g}[1]{\og #1 \fg{}}
+
+\newcommand{\HRule}[1]{\hfill \rule{0.2\linewidth}{#1}}
 
 
 
@@ -216,4 +221,21 @@
     \centering
     \includegraphics[width=0.4\textwidth]{#1}
   \end{wrapfigure}
+}
+
+\renewcommand{\citation}[2]{
+\vspace{5mm}
+\hspace{15mm}{\fontsize{72}{72}\selectfont \textcolor{Cdl}{“}}\vspace{-18mm}
+\begin{flushright}
+	\begin{minipage}{0.8\textwidth}
+		\begin{flushleft}
+			\large \textit{\og #1 \fg{}} \\
+		\end{flushleft}
+		\begin{flushright}\vspace{-5mm}
+			{\normalsize #2}
+		\end{flushright}
+	\end{minipage}
+\end{flushright}
+\begin{flushright}
+\end{flushright}\vspace{-5mm}
 }
