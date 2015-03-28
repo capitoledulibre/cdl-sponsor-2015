@@ -15,7 +15,7 @@
 %\RequirePackage{microtype}
 \usepackage{xltxtra}
 % ⇒ installer la font sur la machine.
-\defaultfontfeatures{Ligatures=TeX,Scale=1}
+\defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Linux Biolinum O}
 \setsansfont{Linux Biolinum O}
 
