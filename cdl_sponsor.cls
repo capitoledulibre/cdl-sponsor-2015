@@ -36,6 +36,7 @@
 \RequirePackage{wallpaper}
 \RequirePackage{tikz}
 \RequirePackage{wrapfig}
+\definecolor{white}{rgb}{1,1,1}
 \definecolor{Cdl}{rgb}{0.81,0.24,0.00}
 \definecolor{Cdlblue}{rgb}{0.00,0.57,0.81}
 \definecolor{Cdlblack}{rgb}{0.15,0.04,0.00}
@@ -163,6 +164,17 @@
   \endgroup
 
   \par\vspace*{0.04\paperheight}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Insertion d'une photo
+%  #1  : Image d'arrière-plan du titre
+%  #2  : Crédits pour l'image
+\newcommand{\InsertPhoto}[2]{
+	\ifthenelse{\equal{#1}{}}{}{
+	  \includegraphics[width=1.0\textwidth]{#1}
+	}
+	\footnotesize\textcolor{white}{\textbf{#2}}
 }
 
 
