@@ -8,7 +8,7 @@ et d'autres paquets fournissants siunitx.sty, francais.ldf
 
 Si néanmoins il manque des paquets
 
-	sudo apt-get install textlive-full
+	sudo apt-get install texlive-full
 
 Compilation du document : 
 
