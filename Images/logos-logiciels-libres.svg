@@ -7446,9 +7446,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="15.239521"
-     inkscape:cy="561.8929"
+     inkscape:zoom="2.8"
+     inkscape:cx="312.20731"
+     inkscape:cy="505.96957"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -7477,7 +7477,7 @@
     <g
        style="display:inline"
        id="g3942"
-       transform="matrix(0.42373589,0,0,0.42373589,256.5975,465.74538)">
+       transform="matrix(0.390625,0,0,0.390625,257.37842,479.20951)">
       <g
          style="display:inline"
          id="layer2">
@@ -7532,7 +7532,7 @@
     <g
        style="overflow:visible"
        id="g5262"
-       transform="matrix(0.3341242,0,0,0.3341242,245.53497,562.26318)">
+       transform="matrix(0.34584673,0,0,0.34584673,259.19692,541.6192)">
       <g
          id="Firefox">
         <g
@@ -9279,7 +9279,7 @@
        transform="translate(-1823.7997,-1705.6032)" />
     <g
        id="g7465"
-       transform="matrix(0.45504333,0,0,0.45504333,1217.2286,490.65442)">
+       transform="matrix(0.45504333,0,0,0.45504333,1209.1344,421.09416)">
       <path
          inkscape:connector-curvature="0"
          inkscape:export-filename="/Freie_Software/LibreOffice/LibreOffice Initial Artwork/Presentation Template/text4339.png"
@@ -9318,7 +9318,7 @@
     </g>
     <g
        id="layer1-6"
-       transform="matrix(1.1789601,0,0,1.1789601,396.48375,524.277)">
+       transform="matrix(1.0868357,0,0,1.0868357,373.51166,481.34391)">
       <path
          id="path6490"
          style="color:#000000;fill:url(#radialGradient6498);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.9999997;marker:none;visibility:visible;display:inline;overflow:visible"
@@ -9441,7 +9441,7 @@
          inkscape:connector-curvature="0" />
     </g>
     <g
-       transform="matrix(0.16631865,0,0,-0.16631865,344.08973,508.15407)"
+       transform="matrix(0.15332245,0,0,-0.15332245,314.6734,508.92233)"
        inkscape:label="Thunderbird-FINAL"
        id="g12">
       <g
@@ -15313,7 +15313,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.0708667,0,0,0.0708667,297.35714,611.40576)"
+       transform="matrix(0.06532915,0,0,0.06532915,315.91415,541.03987)"
        id="layer1-63"
        inkscape:label="Ebene 1">
       <path
