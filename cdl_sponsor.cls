@@ -30,6 +30,7 @@
                 pdffitwindow=true,
                 colorlinks=true,
                 urlcolor=Cdl]{hyperref}
+\usepackage{titlesec}
 
 % Graphique
 \RequirePackage{graphicx}
@@ -84,6 +85,9 @@
 
 % Espace de début de paragraphe
 \setlength{\parindent}{0cm}
+
+% Espace après le paragraphe
+\setlength{\parskip}{0.25\baselineskip}
 
 % Marges
 \setlength{\hoffset}{0pt}
@@ -205,6 +209,7 @@
   \endgroup
   \vspace*{-0.01\paperheight}
   \noindent\textcolor{Cdl}{\hrulefill}\nobreak
+  \vspace*{0.25\baselineskip}
   \vskip 1ex\nobreak
 }
 \makeatother
@@ -213,22 +218,35 @@
 % Mise en page des sous-sections
 \makeatletter
 \def\subsection#1{
-%  \vspace*{\baselineskip}
+  \vspace*{0.5\baselineskip}
   \begingroup
     \noindent
     \leavevmode\large\bfseries\raggedright\textcolor{Cdl}{#1}\par\nobreak
   \endgroup
-  \vspace*{0.5\baselineskip}
+  \vspace*{0.25\baselineskip}
 }
 \makeatother
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inclusion d'image dans le texte
-\newcommand{\ImageDroite}[1]{
-  \begin{wrapfigure}{r}{0.4\textwidth}
+
+% InsertImage
+%  #1 : Nom du fichier
+%  #2 : Largeur
+%  #3 : alignement gauche ou droite
+
+\newcommand{\InsertImage}[3]{
+  \begin{wrapfigure}{#3}{#2\textwidth}
     \centering
-    \includegraphics[width=0.4\textwidth]{#1}
+    \includegraphics[width=#2\textwidth]{#1}
+  \end{wrapfigure}
+}
+
+\newcommand{\ImageDroite}[1]{
+  \begin{wrapfigure}{r}{0.33334\textwidth}
+    \centering
+    \includegraphics[width=0.33334\textwidth]{#1}
   \end{wrapfigure}
 }
 
