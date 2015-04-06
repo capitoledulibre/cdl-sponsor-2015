@@ -179,7 +179,7 @@
 	\ifthenelse{\equal{#1}{}}{}{
 	  \includegraphics[width=1.0\textwidth]{#1}
 	}
-	\footnotesize\textcolor{white}{\textbf{#2}}
+	\footnotesize{\textbf{#2}}
 }
 
 
