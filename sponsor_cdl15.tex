@@ -24,22 +24,33 @@
 
 \thispagestyle{empty} % Remove page numbering on this page
 
+\ThisURCornerWallPaper{1}{Images/bgfirstpage.eps}
+
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\colorbox{Cdl}{
-	\parbox[t]{1.0\linewidth}{
-		\centering \fontsize{50pt}{80pt}\selectfont % The first argument for fontsize is the font size of the text and the second is the line spacing - you may need to play with these for your particular title
-		\vspace*{0.7cm} % Space between the start of the title and the top of the grey box
+\parbox[t]{1.0\textwidth}{
+	\flushright \fontsize{45pt}{60pt}\selectfont % The first argument for fontsize is the font size of the text and the second is the line spacing - you may need to play with these for your particular title
+	\vspace*{0.7cm} % Space between the start of the title and the top of the grey box
 		
-		\hfill Capitole du Libre 2015		\\
-		\hfill Dossier \textit{Sponsoring}  \\
-		\hfill Toulibre  					\\\par
-		
-		\vspace*{0.7cm} % Space between the end of the title and the bottom of the grey box
+	\textcolor{white}{
+		\hfill \textsc{Capitole du Libre 2015} \\
+		\fontsize{36pt}{50pt}\selectfont{
+			\hfill Dossier \textit{sponsoring} \\
+			\hfill Toulibre \\
+		}
 	}
+	\par
+	
+	\vspace*{0.7cm} % Space between the end of the title and the bottom of the grey box
 }
+
+%----------------------------------------------------------------------------------------
+%	Image
+%----------------------------------------------------------------------------------------
+
+\InsertPhoto{Images/titre2.jpg}{Benh \bsc{Lieu Song} -- CC-BY-SA 3.0}
 
 %----------------------------------------------------------------------------------------
 
@@ -52,11 +63,13 @@
 \hfill Association Toulibre \\
 \hfill \url{http://toulibre.org} \\
 \hfill \url{http://capitoledulibre.org} \\
-\hfill \url{contact@capitoledulibre.org} \\
+\hfill \href{mailto:contact@capitoledulibre.org}{\texttt{contact@capitoledulibre.org}} \\
 %\HRule{1pt}} % Horizontal line, thickness changed here
 }
 %----------------------------------------------------------------------------------------
 \clearpage
+
+\CenterWallPaper{0.95}{Images/fond.eps}
 
 \section{Présentation des logiciels libres}
 
