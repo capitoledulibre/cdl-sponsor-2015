@@ -41,7 +41,7 @@
 \definecolor{Cdl}{rgb}{0.81,0.24,0.00}
 \definecolor{Cdlblue}{rgb}{0.00,0.57,0.81}
 \definecolor{Cdlblack}{rgb}{0.15,0.04,0.00}
-\graphicspath{ {Images/} }
+\graphicspath{ {Images/}{Photos/} }
 
 % Utile
 \RequirePackage{ifthen}
@@ -192,7 +192,11 @@
 \fancyfoot[L]{\footnotesize{\Titre\\\url{\Web}}}
 %\fancyfoot[C]{\footnotesize{\textit{~\\\SousTitre}}}
 \fancyfoot[C]{\footnotesize{\textit{~ \\\SousTitre}}}
-\fancyfoot[R]{\footnotesize{~\\\thepage/\pageref*{LastPage}}}
+\fancyfoot[R]{
+	%\colorbox{Cdl}{
+		\footnotesize{~ \\\thepage/\pageref*{LastPage}}
+	%}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Environnement pour la mise en page de l'introduction
@@ -238,8 +242,10 @@
 
 \newcommand{\InsertImage}[3]{
   \begin{wrapfigure}{#3}{#2\textwidth}
+  	\vspace{-1.5\baselineskip}
     \centering
     \includegraphics[width=#2\textwidth]{#1}
+  	\vspace{-3.0\baselineskip}
   \end{wrapfigure}
 }
 
