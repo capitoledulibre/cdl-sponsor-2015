@@ -53,6 +53,8 @@
 \usepackage{multicol}
 \usepackage{mparhack, manfnt}
 \usepackage{svg}
+\usepackage{nicefrac}
+\usepackage{units}
 %\setsvg{inkscape = inkscape -z -D}
 
 % Divers 
