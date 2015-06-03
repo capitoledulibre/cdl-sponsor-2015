@@ -309,3 +309,9 @@
     \centering
     \includegraphics[width=#2]{Images/#1}
   }
+
+
+\newcommand{\photo}[2]{
+    \centering
+	\includegraphics[width=#2]{Photos/#1}
+  }
