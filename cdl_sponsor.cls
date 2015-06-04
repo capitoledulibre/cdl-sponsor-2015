@@ -33,6 +33,11 @@
                 allcolors=Cdl]{hyperref}
 \usepackage{titlesec}
 
+% Polices
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont{Linux Biolinum O}
+\setsansfont{Linux Biolinum O}
+
 % Graphique
 \RequirePackage{graphicx}
 \RequirePackage{wallpaper}
