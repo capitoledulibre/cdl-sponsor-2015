@@ -15,10 +15,8 @@
 %\RequirePackage{microtype}
 \usepackage{xltxtra}
 % ⇒ installer la font sur la machine.
-\defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Linux Biolinum O}
-\setsansfont{Linux Biolinum O}
 
+\usepackage[francais]{babel}
 \usepackage{tgadventor}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
 %\usepackage[T1]{fontenc}
