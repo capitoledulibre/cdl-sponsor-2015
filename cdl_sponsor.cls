@@ -66,7 +66,8 @@
 \usepackage{siunitx}
 
 \sisetup{
-	detect-all        = true
+	detect-all        = true,
+	binary-units = true
 }
 
 \usepackage[francais]{babel}
