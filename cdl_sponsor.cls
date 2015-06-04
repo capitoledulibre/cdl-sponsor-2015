@@ -322,7 +322,8 @@
 
 
 \newcommand{\image}[2]{
-    \centering
+    {\centering
     \includegraphics[width=#2]{#1}
+    }
   }
 
