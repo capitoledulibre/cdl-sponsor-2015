@@ -34,7 +34,7 @@
 \usepackage{titlesec}
 
 % Polices
-\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Linux Biolinum O}
 \setsansfont{Linux Biolinum O}
 
