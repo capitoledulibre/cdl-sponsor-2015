@@ -57,6 +57,7 @@
 \usepackage{nicefrac}
 \usepackage{units}
 \usepackage{pgf-pie}
+\usepackage{subfig}
 %\setsvg{inkscape = inkscape -z -D}
 
 % Divers 
