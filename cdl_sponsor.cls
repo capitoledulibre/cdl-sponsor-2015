@@ -64,6 +64,11 @@
 
 \usepackage{eurosym}
 \usepackage{siunitx}
+
+\sisetup{
+	detect-all        = true
+}
+
 \usepackage[francais]{babel}
 \usepackage{pifont}
 \newcommand{\logo}{\textcolor{Cdl}{\ding{'340}}}
