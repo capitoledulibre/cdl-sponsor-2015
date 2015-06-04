@@ -323,11 +323,6 @@
 
 \newcommand{\image}[2]{
     \centering
-    \includegraphics[width=#2]{Images/#1}
+    \includegraphics[width=#2]{#1}
   }
 
-
-\newcommand{\photo}[2]{
-    \centering
-	\includegraphics[width=#2]{Photos/#1}
-  }
