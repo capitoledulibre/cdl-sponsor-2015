@@ -54,7 +54,22 @@ Pour l'édition 2015 du Capitole du Libre, nous prévoyons une augmentation de n
 \begin{figure}
 \begin{center}
 \begin{tikzpicture}
-\pie[text=legend, pos={8,0}, explode=0.1, scale font]{35/Prise en charge des intervenants, 23/Buffet et nourriture, 20/Goodies, 8/Sécurité, 7/Lieu événement, 4/Impressions, 3/Divers}
+\pie[text=legend, pos={8,0}, explode=0.2, scale font, style={ultra thin},
+	color={Cdlblue!80,
+			Cdl!100!,
+			orange!80,
+			red!90!yellow!90,
+			blue!20!yellow!75,
+			red!60!blue!60,
+			gray!30}]{
+	35/Prise en charge des intervenants,
+	23/Buffet et nourriture,
+	20/Goodies,
+	8/Sécurité,
+	7/Lieu événement,
+	4/Impressions,
+	3/Divers
+}
 \end{tikzpicture}
 \end{center}
 \caption{Dépenses du Capitole du Libre 2014}\label{fig_budget}

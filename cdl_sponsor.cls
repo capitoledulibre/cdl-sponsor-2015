@@ -45,6 +45,7 @@
 \RequirePackage{wrapfig}
 \definecolor{white}{rgb}{1,1,1}
 \definecolor{Cdl}{rgb}{0.81,0.24,0.00}
+\definecolor{Cdlbrown}{rgb}{0.48,0.14,0.00}
 \definecolor{Cdlblue}{rgb}{0.00,0.57,0.81}
 \definecolor{Cdlblack}{rgb}{0.15,0.04,0.00}
 \graphicspath{ {Images/}{Photos/} }
