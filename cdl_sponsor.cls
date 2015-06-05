@@ -287,6 +287,14 @@
   \end{wrapfigure}
 }
 
+\newcommand{\FloatFigure}[3]{
+  \begin{wrapfigure}{#1}{0.4\textwidth}
+    \centering
+    \includegraphics[width=0.4\textwidth]{#2}
+  	\caption{#3}
+  \end{wrapfigure}
+}
+
 \renewcommand{\citation}[2]{
 \vspace{5mm}
 \hspace{15mm}{\fontsize{72}{72}\selectfont \textcolor{Cdl}{“}}\vspace{-18mm}
