@@ -73,7 +73,13 @@
 
 \sisetup{
 	detect-all        = true,
-	binary-units = true
+	binary-units = true,
+	inter-unit-product = {~},
+	number-unit-product = {~},
+	group-minimum-digits = 4,
+	output-decimal-marker = {,},
+	input-decimal-markers = {,},
+	group-separator = {~},
 }
 
 \usepackage[francais]{babel}
