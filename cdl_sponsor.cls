@@ -16,6 +16,8 @@
 \usepackage{xltxtra}
 % ⇒ installer la font sur la machine.
 
+
+
 \usepackage[francais]{babel}
 \usepackage{tgadventor}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
@@ -214,7 +216,7 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[L]{\footnotesize{\Titre\\\url{\Web}}}
 %\fancyfoot[C]{\footnotesize{\textit{~\\\SousTitre}}}
-\fancyfoot[C]{\footnotesize{\textit{~ \\\SousTitre}}}
+\fancyfoot[C]{\footnotesize{~ \\\SousTitre}}
 \fancyfoot[R]{
 	%\colorbox{Cdl}{
 		\footnotesize{~ \\\thepage/\pageref*{LastPage}}
