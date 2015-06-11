@@ -10,6 +10,6 @@ Si néanmoins il manque des paquets
 
 	sudo apt-get install texlive-full
 
-Compilation du document : 
+Compilation du document (2 fois consécutive) : 
 
 	xelatex sponsor_cdl15.tex
