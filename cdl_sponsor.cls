@@ -231,24 +231,24 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mise en page des sections
-%\makeatletter
-%\def\section#1{
-%  \vspace*{\baselineskip}
-%  \begingroup
-%    \noindent
-%    \leavevmode\Large\bfseries\raggedright\textcolor{Cdl}{#1}\par\nobreak
-%  \endgroup
-%  \vspace*{-0.01\paperheight}
-%  \noindent\textcolor{Cdl}{\hrulefill}\nobreak
-%  \vspace*{0.25\baselineskip}
-%  \vskip 1ex\nobreak
-%}
-%\makeatother
+\makeatletter
+\def\section#1{
+  \vspace*{\baselineskip}
+  \begingroup
+    \noindent
+    \leavevmode\Large\bfseries\raggedright\textcolor{Cdl}{#1}\par\nobreak
+  \endgroup
+  \vspace*{-0.01\paperheight}
+  \noindent\textcolor{Cdl}{\hrulefill}\nobreak
+  \vspace*{0.25\baselineskip}
+  \vskip 1ex\nobreak
+}
+\makeatother
 
-\renewcommand\section{\@startsection {section}{1}{\z@}%
-	{0.01\paperheight}%
-	{0.01\paperheight}%
-	{\leavevmode\Large\bfseries\raggedright\color{Cdl}}}
+%\renewcommand\section{\@startsection {section}{1}{\z@}%
+%	{0.01\paperheight}%
+%	{0.01\paperheight}%
+%	{\leavevmode\Large\bfseries\raggedright\color{Cdl}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mise en page des sous-sections
