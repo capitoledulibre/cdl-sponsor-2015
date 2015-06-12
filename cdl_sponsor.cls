@@ -29,7 +29,7 @@
                 unicode=true,
                 pdffitwindow=true,
                 colorlinks=true,
-                urlcolor=URL,
+                urlcolor=Cdl,
 				linkcolor=Cdl]{hyperref}
 \usepackage{titlesec}
 
