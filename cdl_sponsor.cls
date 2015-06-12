@@ -29,10 +29,8 @@
                 unicode=true,
                 pdffitwindow=true,
                 colorlinks=true,
-                urlcolor=Cdl,
-                citecolor=Cdl,
-                filecolor=Cdl,
-                allcolors=Cdl]{hyperref}
+                urlcolor=URL,
+				linkcolor=Cdl]{hyperref}
 \usepackage{titlesec}
 
 % Polices
@@ -50,6 +48,7 @@
 \definecolor{Cdlbrown}{rgb}{0.48,0.14,0.00}
 \definecolor{Cdlblue}{rgb}{0.00,0.57,0.81}
 \definecolor{Cdlblack}{rgb}{0.15,0.04,0.00}
+\definecolor{URL}{gray}{0.10}
 \graphicspath{ {Images/}{Photos/} }
 
 % Utile
@@ -66,6 +65,9 @@
 \usepackage{units}
 \usepackage{pgf-pie}
 \usepackage{subfig}
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\large\bfseries\color{Cdl}}
+\usepackage{lipsum}
 %\setsvg{inkscape = inkscape -z -D}
 
 % Divers 
@@ -229,19 +231,24 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mise en page des sections
-\makeatletter
-\def\section#1{
-  \vspace*{\baselineskip}
-  \begingroup
-    \noindent
-    \leavevmode\Large\bfseries\raggedright\textcolor{Cdl}{#1}\par\nobreak
-  \endgroup
-  \vspace*{-0.01\paperheight}
-  \noindent\textcolor{Cdl}{\hrulefill}\nobreak
-  \vspace*{0.25\baselineskip}
-  \vskip 1ex\nobreak
-}
-\makeatother
+%\makeatletter
+%\def\section#1{
+%  \vspace*{\baselineskip}
+%  \begingroup
+%    \noindent
+%    \leavevmode\Large\bfseries\raggedright\textcolor{Cdl}{#1}\par\nobreak
+%  \endgroup
+%  \vspace*{-0.01\paperheight}
+%  \noindent\textcolor{Cdl}{\hrulefill}\nobreak
+%  \vspace*{0.25\baselineskip}
+%  \vskip 1ex\nobreak
+%}
+%\makeatother
+
+\renewcommand\section{\@startsection {section}{1}{\z@}%
+	{0.01\paperheight}%
+	{0.01\paperheight}%
+	{\leavevmode\Large\bfseries\raggedright\color{Cdl}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Mise en page des sous-sections
@@ -255,7 +262,6 @@
   \vspace*{0.25\baselineskip}
 }
 \makeatother
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inclusion d'image dans le texte
@@ -343,4 +349,6 @@
     \includegraphics[width=#2]{#1}
     }
   }
+
+% Personnalisation abstract
 
