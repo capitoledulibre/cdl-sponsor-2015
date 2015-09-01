@@ -1,0 +1,100 @@
+\documentclass{cdl_sponsor}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Définition des variables de la classe cdl_sponsor
+
+\DefTitre{Capitole du Libre 2015}
+\DefSousTitre{Communiqué de Presse}
+\DefAuteur{Toulibre}
+\DefWeb{http://2015.capitoledulibre.org}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Informations du document (pour pdflatex)
+\ifpdf
+  \hypersetup{pdftitle={\SousTitre}}
+  \hypersetup{pdfauthor={\Auteur}}
+  \hypersetup{pdfsubject={\Titre}}
+  \hypersetup{pdfcreator={\Auteur}}
+  \hypersetup{pdfproducer={\Auteur}}
+  \hypersetup{pdfkeywords={}}
+\fi
+
+\begin{document}
+
+\renewcommand{\tablename}{\bsc{Tableau}}
+
+\thispagestyle{empty} % Remove page numbering on this page
+
+\ThisURCornerWallPaper{1}{bgfirstpage.eps}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\parbox[t]{1.0\textwidth}{
+	\flushright \fontsize{45pt}{60pt}\selectfont % The first argument for fontsize is the font size of the text and the second is the line spacing - you may need to play with these for your particular title
+	\vspace*{0.7cm} % Space between the start of the title and the top of the grey box
+
+	\textcolor{white}{
+		\hfill \textsc{Capitole du Libre 2015} \\
+		\fontsize{36pt}{50pt}\selectfont{
+			\hfill Communiqué de Presse \\
+			\hfill \textit{8 septembre 2015} \\
+		}
+	}
+	\par
+
+	\vspace*{0.7cm} % Space between the end of the title and the bottom of the grey box
+}
+
+%----------------------------------------------------------------------------------------
+%	Image
+%----------------------------------------------------------------------------------------
+
+\InsertPhoto{titre2.jpg}{Benh \bsc{Lieu Song} -- CC-BY-SA 3.0}
+
+%----------------------------------------------------------------------------------------
+
+\vfill % Space between the title box and author information
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR NAME AND INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+{\centering \large
+\hfill Association Toulibre \\
+\hfill \url{http://toulibre.org} \\
+\hfill \url{http://capitoledulibre.org} \\
+\hfill \href{mailto:contact@capitoledulibre.org}{\texttt{contact@capitoledulibre.org}} \\
+%\HRule{1pt}} % Horizontal line, thickness changed here
+}
+%----------------------------------------------------------------------------------------
+\clearpage
+
+\CenterWallPaper{0.95}{fond.eps}
+
+\section{Le Capitole du Libre}
+
+	\input{le-cdl.tex}
+
+\section{Toulibre}
+
+	\input{toulibre.tex}
+
+\newpage
+
+\section{Le lieu}
+
+	\input{la-ville-rose.tex}
+
+\section{Contact}
+
+	\input{contact.tex}
+
+\section{Sources et références}
+
+	\input{source-ref.tex}
+
+
+
+\end{document}
