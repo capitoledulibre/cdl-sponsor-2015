@@ -70,7 +70,7 @@
 \usepackage{lipsum}
 %\setsvg{inkscape = inkscape -z -D}
 
-% Divers 
+% Divers
 
 \usepackage{eurosym}
 \usepackage{siunitx}
@@ -351,4 +351,3 @@
   }
 
 % Personnalisation abstract
-
