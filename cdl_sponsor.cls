@@ -75,6 +75,9 @@
 \usepackage{eurosym}
 \usepackage{siunitx}
 
+\usepackage{setspace}
+\onehalfspacing
+
 \sisetup{
 	detect-all        = true,
 	binary-units = true,
