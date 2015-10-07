@@ -31,6 +31,12 @@
                 colorlinks=true,
                 urlcolor=Cdl,
 				linkcolor=Cdl]{hyperref}
+
+\hypersetup{pdftitle={Capitole du Libre 21 et 22 novembre 2015},
+				pdfsubject={Communiqué de Presse},
+				pdfauthor={Toulibre},
+				baseurl={https://capitoledulibre.org}}
+
 \usepackage{titlesec}
 
 % Polices
