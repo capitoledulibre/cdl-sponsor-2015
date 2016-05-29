@@ -43,8 +43,11 @@
 
 % Polices
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Linux Biolinum}
-\setsansfont{Linux Biolinum}
+%\setmainfont{Linux Biolinum}
+%\setsansfont{Linux Biolinum}
+\setmainfont{Linux Biolinum O}
+\setsansfont{Linux Biolinum O}
+
 
 % Graphique
 \RequirePackage{graphicx}
@@ -379,3 +382,16 @@
   }
 
 % Personnalisation abstract
+
+% Mise en page des sous-sous-sections
+\makeatletter
+\def\subsubsection#1{
+     \vspace*{0.2\baselineskip}
+      \begingroup
+        \noindent
+        \leavevmode\normalsize\bfseries\itshape\raggedright\textcolor{Cdl}{#1}\par\nobreak
+      \endgroup
+      \vspace*{0.2\baselineskip}
+    }
+\makeatother
+
