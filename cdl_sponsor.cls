@@ -13,8 +13,10 @@
 
 % Polices
 %\RequirePackage{microtype}
+
 \usepackage{xltxtra}
-% ⇒ installer la font sur la machine.
+
+%â installer la font sur la machine.
 
 
 
@@ -32,8 +34,8 @@
                 urlcolor=Cdl,
 				linkcolor=Cdl]{hyperref}
 
-\hypersetup{pdftitle={Capitole du Libre 21 et 22 novembre 2015},
-				pdfsubject={Communiqué de Presse},
+\hypersetup{pdftitle={Capitole du Libre 19 et 20 novembre 2016},
+				pdfsubject={Communiqude Presse},
 				pdfauthor={Toulibre},
 				baseurl={https://capitoledulibre.org}}
 
@@ -41,8 +43,8 @@
 
 % Polices
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Linux Biolinum O}
-\setsansfont{Linux Biolinum O}
+\setmainfont{Linux Biolinum}
+\setsansfont{Linux Biolinum}
 
 % Graphique
 \RequirePackage{graphicx}
@@ -55,8 +57,10 @@
 \definecolor{Cdlblue}{rgb}{0.00,0.57,0.81}
 \definecolor{Cdlblack}{rgb}{0.15,0.04,0.00}
 \definecolor{URL}{gray}{0.10}
+\definecolor{subsubsection}{rgb}{0.8,0.6,0.00}
 \graphicspath{ {Images/}{Photos/} }
 
+% Utile pour trouver le code RGB Latex  que l'on veut http://latexcolor.com
 % Utile
 \RequirePackage{ifthen}
 \RequirePackage{ifpdf}
@@ -116,13 +120,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Constantes
 
-% Séparateur
+% Sparateur
 \newcommand{\Separateur}{\vspace*{0.5\baselineskip}}
 
-% Espace de début de paragraphe
+% Espace de dbut de paragraphe
 \setlength{\parindent}{0cm}
 
-% Espace après le paragraphe
+% Espace aprs le paragraphe
 \setlength{\parskip}{0.25\baselineskip}
 
 % Marges
@@ -148,34 +152,34 @@
 % Titre du document (utiliser \DefTitre pour le changer)
 \newcommand{\Titre}{}
 \newcommand{\DefTitre}[1]{\renewcommand{\Titre}{#1}}
-\DefTitre{Titre inconnu} % Valeur par défaut
+\DefTitre{Titre inconnu} % Valeur par dfaut
 
 % Sous-titre du document (utiliser \DefSousTitre pour le changer)
 \newcommand{\SousTitre}{}
 \newcommand{\DefSousTitre}[1]{\renewcommand{\SousTitre}{#1}}
-\DefSousTitre{Sous-titre inconnu} % Valeur par défaut
+\DefSousTitre{Sous-titre inconnu} % Valeur par dfaut
 
 % Auteur du document (utiliser \DefAuteur pour le changer)
 \newcommand{\Auteur}{}
 \newcommand{\DefAuteur}[1]{\renewcommand{\Auteur}{#1}}
-\DefAuteur{Auteur inconnu} % Valeur par défaut
+\DefAuteur{Auteur inconnu} % Valeur par dfaut
 
 % Page web (utiliser \DefWeb pour le changer)
 \newcommand{\Web}{}
 \newcommand{\DefWeb}[1]{\renewcommand{\Web}{#1}}
-\DefWeb{http://} % Valeur par défaut
+\DefWeb{http://} % Valeur par dfaut
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Création du titre
-%  #1  : Image d'arrière-plan du titre
-%  #2  : Crédits pour l'image
+% Cration du titre
+%  #1  : Image d'arrire-plan du titre
+%  #2  : Crdits pour l'image
 \newcommand{\CreerTitre}[2]{
   \begingroup
     \begin{tikzpicture}[remember picture, overlay]
       \node at (current page.north west){
         \begin{tikzpicture}[remember picture, overlay]
-          % Noeud dont l'origine en haut à gauche est décalée de 0.14 vers la
-          % gauche pour éviter une bande blanche incompréhensible.
+          % Noeud dont l'origine en haut  gauche est dcale de 0.14 vers la
+          % gauche pour viter une bande blanche incomprhensible.
           \node[anchor=north west, inner sep=0] at (-0.14,0){
             \ifthenelse{\equal{#1}{}}{}{
               \includegraphics[width=\paperwidth, height=0.35\paperheight]{#1}
@@ -209,8 +213,8 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Insertion d'une photo
-%  #1  : Image d'arrière-plan du titre
-%  #2  : Crédits pour l'image
+%  #1  : Image d'arrire-plan du titre
+%  #2  : Crdits pour l'image
 \newcommand{\InsertPhoto}[2]{
 	\ifthenelse{\equal{#1}{}}{}{
 	  \includegraphics[width=1.0\textwidth]{#1}
@@ -220,7 +224,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% En-têtes et pieds de page
+% En-tÃªtes et pieds de page
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
@@ -273,6 +277,20 @@
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Mise en page des sous-sous-sections
+\makeatletter
+\def\subsubsection#1{
+  \vspace*{0.2\baselineskip}
+  \begingroup
+    \noindent
+    \leavevmode\normalsize\bfseries\itshape\raggedright\textcolor{Cdl}{#1}\par\nobreak
+  \endgroup
+  \vspace*{0.2\baselineskip}
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Inclusion d'image dans le texte
 
 % InsertImage
@@ -317,6 +335,7 @@
   	\caption{#3}
   \end{wrapfigure}
 }
+
 
 \renewcommand{\citation}[2]{
 \vspace{5mm}
